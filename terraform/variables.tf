@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "okta_org_url" {
   description = "Okta organization URL"
   type        = string
-  default     = "https://igasecurityconsulting-trial-9194565.okta.com"
+  default     = "https://your-org.okta.com"
 }
 
 variable "permission_sets" {
@@ -41,7 +41,7 @@ variable "project_tags" {
   type        = map(string)
   default = {
     Project     = "AWS-SAML-Federation"
-    Environment = "Lab"
+    Environment = "Production"
     Owner       = "Go-Cloud-Architects"
     Purpose     = "NHI-Identity-Federation-Demo"
   }
